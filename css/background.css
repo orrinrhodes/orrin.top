@@ -1,0 +1,15 @@
+html {
+    width: 100%;
+    height: 100%;
+  }
+  
+body {
+margin: 2rem;
+/*background: url("./images/orriniscool.jpg") center center repeat;*/
+background: linear-gradient(
+    0deg,
+    #dde5ba,
+    #a02424
+);
+}
+  
