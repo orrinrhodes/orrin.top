@@ -14,7 +14,7 @@ async function drawRipple(ev) {
     clone.style.left = ev.clientX - 5 + "px";
     clone.style.top = ev.clientY - 5 + "px";
     node.after(clone);
-    await sleep(250)
+    await sleep(100)
     clone.remove();
 };
 
