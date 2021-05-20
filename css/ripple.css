@@ -1,0 +1,49 @@
+.controller {
+    border: solid 3px rgba(212, 115, 231, 0.9);
+    color: rgba(212, 115, 231, 0.9);;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    padding: 10px 15px 8px 15px;
+    position: absolute;
+    font-size: 22px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  /*Ripple*/
+  .ripple {
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    background: rgb(212, 115, 231);
+    border-radius: 50%;
+    position: fixed;
+  }
+  
+  /*Bright Ripple*/
+  body.dark {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  body.dark .ripple {
+    background: rgb(99, 10, 10);
+  }
+  body.dark .controller {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+  }
+  
+  /*Animate Function*/
+  .animate {
+    animation: ripple-mo 1s cubic-bezier(0, 0, 0.2, 1);
+  }
+  @keyframes ripple-mo {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(10);
+    }
+  }
+  

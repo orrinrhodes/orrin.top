@@ -1,14 +1,3 @@
-html {
-    width: 100%;
-    height: 100%;
-  }
-  
-body {
-/*background: url("./images/orriniscool.jpg") center center repeat;*/
-background: linear-gradient(
-    0deg,
-    #dde5ba,
-    #dde5ba
-);
+body{
+  background-color: rgb(41, 36, 41);
 }
-  
