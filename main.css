@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    background-color: maroon;
+    color: beige;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 150px;
+    left: 0;
+    outline: none;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
