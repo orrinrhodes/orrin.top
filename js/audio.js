@@ -35,18 +35,18 @@ window.onload = function() {
 
     analyser.getByteFrequencyData(dataArray);
 
-    //ctx.fillStyle = "#00FFFFFF";
-    //ctx.fillRect(0, 0, WIDTH, HEIGHT);
+    ctx.fillStyle = "#00FFFFFF";
+    ctx.fillRect(0, 0, WIDTH/2, HEIGHT);
 
     for (var i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
         
-        var r = barHeight + (25 * (i/bufferLength));
-        var g = 250 * (i/bufferLength);
+        var r = barHeight + (1 * (i/bufferLength));
+        var g = 2 * (i/bufferLength);
         var b = 255;
 
         ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-        ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+        ctx.fillRect(x, HEIGHT/2 , barWidth, barHeight);
 
         x += barWidth + 1;
     }
