@@ -29,28 +29,27 @@ window.onload = function() {
     var x = 0;
 
     function renderFrame() {
-    requestAnimationFrame(renderFrame);
+        requestAnimationFrame(renderFrame);
 
-    x = 0;
+        x = 0;
 
-    analyser.getByteFrequencyData(dataArray);
+        analyser.getByteFrequencyData(dataArray);
 
-    ctx.fillStyle = "#00FFFFFF";
-    ctx.fillRect(0, 0, WIDTH/2, HEIGHT);
 
-    for (var i = 0; i < bufferLength; i++) {
-        barHeight = dataArray[i];
-        
-        var r = barHeight + (1 * (i/bufferLength));
-        var g = 2 * (i/bufferLength);
-        var b = 255;
+        for (var i = 0; i < bufferLength; i++) {
+            barHeight = dataArray[i];
+            
+            var r = barHeight + ((i/bufferLength));
+            var g = 500 * (i/bufferLength);
+            var b = 200;
 
-        ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-        ctx.fillRect(x, HEIGHT/2 , barWidth, barHeight);
+            ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+            ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
 
-        x += barWidth + 1;
-    }
-    }
+            x += barWidth + 1;
+            
+        };
+    };
 
     audio.play();
     renderFrame();
