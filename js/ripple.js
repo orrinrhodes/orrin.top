@@ -22,8 +22,8 @@ window.addEventListener("mousemove", drawRipple);
 
 //Control Handler
 function controlHandler() {
-  document.body.classList.toggle("dark");
-  if (document.body.classList.contains("dark")) {
+  document.body.classList.toggle("secondary");
+  if (document.body.classList.contains("secondary")) {
     controller.textContent = "Dark Ripple";
   } else {
     controller.textContent = "Bright Ripple";

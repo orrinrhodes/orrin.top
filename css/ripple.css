@@ -1,18 +1,16 @@
 .controller {
     border: solid 3px rgba(212, 115, 231, 0.9);
-    color: rgba(212, 115, 231, 0.9);;
+    color: rgba(212, 115, 231, 0.9);
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     padding: 10px 15px 8px 15px;
     position: absolute;
     font-size: 22px;
     top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+    left: 60%;
+    transform: translate(-50%, -40%);
   }
   
-  /*Ripple*/
   .ripple {
     width: 10px;
     height: 10px;
@@ -22,19 +20,18 @@
     position: fixed;
   }
   
-  /*Bright Ripple*/
-  body.dark {
+  body.secondary {
     background: rgba(0, 0, 0, 0.9);
+    color: rgb(212, 115, 231);
   }
-  body.dark .ripple {
+  body.secondary .ripple {
     background: rgb(99, 10, 10);
   }
-  body.dark .controller {
+  body.secondary .controller {
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
   }
   
-  /*Animate Function*/
   .animate {
     animation: ripple-mo 1s cubic-bezier(0, 0, 0.2, 1);
   }
