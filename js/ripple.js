@@ -4,7 +4,6 @@ function sleep(ms) {
     );
 };
 
-//Ripple Event Handler
 async function drawRipple(ev) {
     var x = ev.clientX;
     var y = ev.clientY;
@@ -20,16 +19,15 @@ async function drawRipple(ev) {
 
 window.addEventListener("mousemove", drawRipple);
 
-//Control Handler
-function controlHandler() {
+function colormode() {
   document.body.classList.toggle("secondary");
+  var box = document.querySelector(".controller");
   if (document.body.classList.contains("secondary")) {
-    controller.textContent = "Dark Ripple";
+    box.textContent = "¡Black!";
   } else {
-    controller.textContent = "Bright Ripple";
+    box.textContent = "¡Pink!";
   }
 };
 
-// Control Trigger
-var controller = document.querySelector(".controller");
-window.addEventListener("click", controlHandler);
+
+window.addEventListener("click", colormode);
