@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!--<meta http-equiv="refresh" content=".1; URL=https://www.youtube.com/watch?v=dQw4w9WgXcQ" />-->
+
   <!-- HTML Meta Tags -->
   <title>orrin gets top</title>
   <meta name="author" content="orrin">
@@ -31,11 +32,15 @@
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/ripple.css">
   <link rel="stylesheet" href="./css/audio.css">
+  <link rel="stylesheet" href="./css/images.css">
 
-  <style>html, body {margin: 0; height: 100%; overflow: hidden}</style>
+  <!--<style>html, body {margin: 0; height: 100%; overflow: hidden}</style>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
+  <!-- Ripple -->
   <div class="door">
     <img src="./images/starburst.jpg" alt="">
   </div>
@@ -44,10 +49,21 @@
     <div class="ripple"></div>
   </div>
   <script src="../js/ripple.js"></script>
+
+  <!-- Audio -->
   <audio id="audio" autoplay>
     <source src="./music/whensleep.mp3" type="audio/mp3">
   </audio>
   <canvas id="canvas"></canvas>
-  <script src="../js/audio.js"></script>
+  <!--<script src="../js/audio.js"></script>-->
+
+  <!-- Zoom -->
+  <div class="imgs">
+    <img src="./images/babyorrin.jpg" alt="1" width="100%">
+    <img src="./images/starburst.jpg" id="zoomscroll" alt="2">
+    <img src="./images/babyorrin.jpg" alt="3" width="100%">
+  </div>
+  <script src="../js/scroll.js"></script>
+
 </body>
 </html>
