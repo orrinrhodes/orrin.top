@@ -18,6 +18,7 @@
     background: rgb(212, 115, 231);
     border-radius: 50%;
     position: fixed;
+    pointer-events:none;
   }
   
   body.secondary {

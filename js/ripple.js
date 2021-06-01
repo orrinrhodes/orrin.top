@@ -29,5 +29,18 @@ function colormode() {
   }
 };
 
+$(function hover() {
+  $('p').hover(function() {
+    console.log('lol')
+    $('.ripple').css({
+      opacity: 0.01
+    });
+  }, function revert() {
+    $('.ripple').css({
+      opacity: 1
+    });
+  });
+});
+
 
 window.addEventListener("click", colormode);
